@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 48px 16px;
+  background: #efebe3;
+  color: #1f1f1f;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+}
+
+main {
+  max-width: 440px;
+  margin: 0 auto;
+  background: #fdfcf8;
+  border: 2px solid #1f1f1f;
+  padding: 22px 24px 18px;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  font-size: 26px;
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #1f1f1f;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #1f1f1f;
+  border-radius: 0;
+  background: #fff;
+  font: inherit;
+}
+
+input:focus {
+  outline: 2px solid #c8553d;
+  outline-offset: -1px;
+}
+
+button {
+  padding: 8px 14px;
+  border: 1px solid #1f1f1f;
+  border-radius: 0;
+  background: #1f1f1f;
+  color: #fdfcf8;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #3a3a3a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 2px;
+  border-bottom: 1px dotted #b8b2a6;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #f5f1e8;
+}
+
+li::before {
+  content: "▸";
+  color: #888;
+}
+
+.titolo {
+  flex: 1;
+}
+
+li.fatto .titolo {
+  text-decoration: line-through;
+  text-decoration-color: #c8553d;
+  text-decoration-thickness: 2px;
+  color: #8a8a8a;
+}
+
+.elimina {
+  background: none;
+  border: none;
+  color: #c8553d;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 4px;
+}
+
+.elimina:hover {
+  background: none;
+  color: #8f2f1d;
+}
+
+#info {
+  margin: 14px 0 0;
+  font-size: 13px;
+  color: #666;
+  font-variant-numeric: tabular-nums;
+}
